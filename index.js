@@ -18,9 +18,9 @@ const fetchUserData = async () => {
         const filteredUserData = modifiedUserData.filter((user) => user.Email.endsWith('.biz'));
         const sortedUserData = filteredUserData.sort((a, b) => a.Name.localeCompare(b.Name));
 
-        console.log(filteredUserData);
+
         console.log(sortedUserData);
-        console.log(modifiedUserData);
+
     } catch (error) {
         console.error('Error fetching:', error);
     }
